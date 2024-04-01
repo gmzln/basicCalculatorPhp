@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Azubi\\tests\\Math\\MathTest::testSubtract":3},"times":{"Azubi\\tests\\Math\\MathTest::testAdd":0.003,"Azubi\\tests\\Math\\MathTest::testSubtract":0,"Azubi\\tests\\Math\\MathTest::testDivide":0,"Azubi\\tests\\Math\\MathTest::testMultiply":0}}

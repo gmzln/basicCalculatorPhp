@@ -24,8 +24,7 @@ Des Weiteren hatte die IT den Verdacht, dass der Unit-Test nicht mehr vollständ
    - downloaded composer
    - composer install
    - composer.json
-     - delete name
-     - php version to 8.3.4 (version that is used on current device)
+     - php version 7.4 (download php version and switch to current version)
 2. Unit-Test reparieren // DONE
    - unit-test type fixing
    - problem Math class does not implement the MathInterface
@@ -43,8 +42,8 @@ Des Weiteren hatte die IT den Verdacht, dass der Unit-Test nicht mehr vollständ
 #### nice to have:
 
 - Composer Autoloading verwenden (PSR-4) // done
-- Bitte das Layout wieder etwas moderner gestalten.
-- Unit-Tests via composer ausführbar machen //done ?
+- Bitte das Layout wieder etwas moderner gestalten. // done
+- Unit-Tests via composer ausführbar machen //done
 
 ### Tips:
 

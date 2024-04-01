@@ -51,34 +51,34 @@ if (isset($_GET['operation'])) {
 
 <head>
     <meta charset="utf-8">
-    <title>Calculator</title>
-    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div>
+    <div class="calculator">
         <h1><?= $error ?></h1>
         <form action="<?= $_SERVER['PHP_SELF'] ?>" method="get">
-            <label class="form-label" for="value1">Value1:</label>
+            <label class="form-label" for="value1">value:</label>
             <input class="form-input" type="number" step="any" name="value1" id="value1" value="<?= $num1 ?>">
 
-            <label class="form-label" for="operation">operation:</label>
+            <label class="form-label" for="operation"></label>
             <select name="operation" id="operation">
-                <option>add</option>
-                <option>subtract</option>
-                <option>multiply</option>
-                <option>divide</option>
+                <option <?= ($operation === '' || $operation === 'add') ? 'selected' : '' ?>>add</option>
+                <option <?= ($operation === 'subtract') ? 'selected' : '' ?>>subtract</option>
+                <option <?= ($operation === 'multiply') ? 'selected' : '' ?>>multiply</option>
+                <option <?= ($operation === 'divide') ? 'selected' : '' ?>>divide</option>
             </select>
 
-            <label class="form-label" for="value2">Value2:</label>
+            <label class="form-label" for="value2">value:</label>
             <input class="form-input" type="number" step="any" name="value2" id="value2" value="<?= $num2 ?>">
-            <hr />
+
             <div class="form-result">
-                <label for="result">Result</label>
+                <label id="operation-result" for="result">=</label>
                 <input type="number" id="result" value="<?= $result ?>" disabled>
             </div>
-            <hr />
-            <input type="submit" value="calculate">
+
+            <input class="submit" type="submit" value="calculate">
         </form>
 
     </div>
