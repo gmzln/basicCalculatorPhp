@@ -1,7 +1,6 @@
 * {
-    margin: 0px;;
+    margin: 0;
     padding:0;
-    box-sizing: border-box;
     display: block;
 }
 
@@ -22,7 +21,7 @@ html {
 }
 
 h1 {
-    color: #A63A12;
+    color: #F25D07;
 }
 
 .calculator {
@@ -52,17 +51,15 @@ select{
 
 input {
     text-align: center;
-    display: inline-block;
     padding: 2px;
     font-size: xx-large;
-    outline: white;
     border-radius: 20px;
     border: none;
     background-color: #99E9F2;
     stroke: none; 
-    width: auto;
     color: #F25D07;
-    min-width: 20px;
+    min-width: 5px;
+    box-shadow: white 0px 1px 4px, white 0px 0px 0px 3px;
 }
 
 input:focus {
@@ -75,12 +72,11 @@ form {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    /* max-inline-size: 22rem;  */
     border-radius: 20px; 
-    overflow: hidden;
     margin: 3rem;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     background-color:  #99E9F2;
+    padding: 3rem;
 }
 
 .form-result{
