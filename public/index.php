@@ -1,14 +1,12 @@
 <?php
 
-use Azubi\Math\Math;
-
 const BASE_PATH = __DIR__ . '/../';
-
 require BASE_PATH . '/vendor/autoload.php';
+
+use Azubi\Math\Math;
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
 
 $num1 = '';
 $num2 = '';
@@ -24,7 +22,7 @@ if (isset($_GET['operation'])) {
     $math = new Math();
 
     if ($operation === 'divide' && ($num1 == 0 || $num2 == 0)) {
-        $error = 'Durch 0 kann nicht geteilt werden';
+        $error = 'You can`t divide by 0';
     } else if (is_numeric($num1) && is_numeric($num2)) {
         switch ($operation) {
             case 'add':
@@ -41,7 +39,7 @@ if (isset($_GET['operation'])) {
                 break;
         }
     } else {
-        $error = 'Zahl eingeben';
+        $error = 'Please enter a number';
     }
 }
 ?>
