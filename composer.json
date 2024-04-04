@@ -1,7 +1,7 @@
 {
     "autoload": {
         "psr-4": {
-            "Azubi\\Math\\" : "Azubi/"
+            "Azubi\\Math\\" : "Azubi/Math/"
         }
     },
     "authors": [
